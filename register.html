@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Veloria Cosmetics</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- header at first of each page to make the user easely browse -->
+    <header>
+        <div class="logo">
+            <img src="https://i.postimg.cc/yN37y1zr/Screenshot-2025-11-29-055936.png" />
+            <h1>VELORIA</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="../#about">About</a><!--  .. is to go back to the index -->
+            <a href="../#catalog">Catalog</a><!--  .. is to go back to the index -->
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-btns">
+            <div class="log-in-button">
+                <a id="goLogin" class="log-in" href="login.html">Log In</a>
+            </div>
+            <div class="sign-in-button">
+                <a id="goRegister" class="sign-in" href="register.html">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <div class="form-card">
+            <h2>Create Account</h2>
+
+            <form onsubmit="return registerUser()">
+                <label>Full Name</label>
+                <input id="regName" type="text" required />
+
+                <label>Email</label>
+                <input id="regEmail" type="email" required />
+
+                <label>Password</label>
+                <input id="regPassword" type="password" required />
+
+                <label>Confirm Password</label>
+                <input id="regConfirm" type="password" required />
+
+                <button class="submit-btn">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

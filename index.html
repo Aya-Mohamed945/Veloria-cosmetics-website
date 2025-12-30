@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VELORIA Brand</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet" />
+</head>
+<body>
+    <!-- header at first of each page to make the user easely browse -->
+    <header>
+        <!-- Logo and site name -->
+        <div class="logo">
+            <img src="https://i.postimg.cc/yN37y1zr/Screenshot-2025-11-29-055936.png" />
+            <h1>VELORIA</h1>
+        </div>
+
+        <!-- Main navigation menu -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#catalog">Catalog</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Login and Sign-up buttons -->
+        <div class="nav-btns">
+            <div class="log-in-button">
+                <a id="goLogin" class="log-in" href="login.html">Log In</a>
+            </div>
+            <div class="sign-in-button">
+                <a id="goRegister" class="sign-in" href="register.html">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home section / Welcome area -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <img src="https://i.postimg.cc/wTWFqYbm/download-(13).png" alt="" />
+            <h1 id="h1-home">Love My Beauty!</h1>
+            <h2>A Little Glow, A Lot of Love…!</h2>
+            <p>
+                Beauty, a beloved form of self-expression, holds a special place in
+                the hearts of people everywhere. With its rich blend of colors, gentle
+                textures, and uplifting scents, it offers a sensory experience that
+                celebrates confidence, individuality, and the art of self-love.
+            </p>
+            <br />
+            <!-- Welcome button that asks for user's name -->
+            <button class="welcome" id="wel">Welcome!</button>
+        </div>
+    </section>
+
+    <!-- How-It-Works section / Features -->
+    <section class="How-it-work">
+        <h1>How-It-Work</h1>
+        <div class="box-container">
+            <!-- Each box explains a feature of the site -->
+            <div class="box" id="box1">
+                <h3>Perfect Glow</h3>
+                <p>
+                    Luxurious formulas crafted with skin-loving ingredients, blended to
+                    deliver smooth textures and radiant results.
+                </p>
+            </div>
+            <div class="box" id="box2">
+                <h3>Easy Shopping</h3>
+                <p>
+                    A seamless user experience that lets you explore products, add to
+                    cart, and check out in just a few clicks.
+                </p>
+            </div>
+            <div class="box" id="box3">
+                <h3>Top Quality</h3>
+                <p>
+                    Every product is made with premium ingredients and tested for
+                    safety, performance, and long-lasting beauty.
+                </p>
+            </div>
+            <div class="box" id="box4">
+                <h3>Fast Delivery</h3>
+                <p>
+                    Your favorite beauty essentials are packed with care and delivered
+                    to your doorstep quickly and reliably.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <img src="https://i.postimg.cc/jShpYQyB/a2fedd8ecf9b7b639a0b99cd334b9ba8.jpg"
+             alt="" />
+        <h1>About Our Beauty!</h1>
+        <h2>+35</h2>
+        <h3>Our Luxurious Cosmetics</h3>
+        <p>
+            A premium collection crafted with care, known for its elegant blend of
+            nourishing ingredients, delicate textures, and skin-loving formulas. Our
+            beauty line is designed to elevate your everyday routine, bringing
+            together innovation, quality, and a touch of luxury. Our products are
+            thoughtfully created using high-performance ingredients—whether for
+            glowing skin, silky finishes, or long-lasting color—offering a beauty
+            experience that feels effortless, radiant, and uniquely yours.
+        </p>
+        <br />
+        <a href="#catalog">Explore More</a>
+    </section>
+
+    <!-- Products / Catalog section -->
+    <section class="order-menu" id="catalog">
+        <h1>Our Products' Types</h1>
+        <div class="container">
+            <!-- Each product card stores its data as data attributes for JS -->
+            <div class="flip-card-inner"
+                 data-title="Shampoo"
+                 data-price="$120"
+                 data-img="https://i.pinimg.com/1200x/fe/9a/d0/fe9ad049efa86c025c2e76b8c137b986.jpg"
+                 data-description="Nourishing hair cleanser for all hair types.">
+                <div class="flip-card-front">
+                    <img src="https://i.pinimg.com/1200x/fe/9a/d0/fe9ad049efa86c025c2e76b8c137b986.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Shampoo</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Serum"
+                 data-price="$250"
+                 data-img="https://i.postimg.cc/13mSWcXt/7f630ab0fc70b82a48a2070adfc31867.jpg"
+                 data-description="Skin-reviving serum for radiant glow.">
+                <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/13mSWcXt/7f630ab0fc70b82a48a2070adfc31867.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Serum</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Body Lotion"
+                 data-price="$80"
+                 data-img="https://i.postimg.cc/W4qHShGj/4fafe1714727703117b529e37584a244.jpg"
+                 data-description="Hydrating body lotion for smooth skin.">
+                <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/W4qHShGj/4fafe1714727703117b529e37584a244.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Body Lotion</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Face Cleanser"
+                 data-price="$100"
+                 data-img="https://i.postimg.cc/jd83bzc1/539cb4bf4afeeeb4460abd8e33a5ca02.jpg"
+                 data-description="Gentle daily face cleanser.">
+                <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/jd83bzc1/539cb4bf4afeeeb4460abd8e33a5ca02.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Face Cleanser</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Hair Mask"
+                 data-price="$110"
+                 data-img="https://i.postimg.cc/Y9bYWxvm/e1b2b68237dd5fe823eb663e7d56a7da-(1).jpg"
+                 data-description="Deep conditioning treatment for strong hair.">
+                <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/Y9bYWxvm/e1b2b68237dd5fe823eb663e7d56a7da-(1).jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Hair Mask</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Lip Balm"
+                 data-price="$180"
+                 data-img="https://i.pinimg.com/736x/54/58/8c/54588c797a47c30fb9c8426ec5adc309.jpg"
+                 data-description="Softens and moisturizes lips.">
+                <div class="flip-card-front">
+                    <img src="https://i.pinimg.com/736x/54/58/8c/54588c797a47c30fb9c8426ec5adc309.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Lip Balm</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Sunscreen"
+                 data-price="$160"
+                 data-img="https://i.pinimg.com/1200x/6c/1b/84/6c1b847928920bd4ae19a07828b9b11b.jpg"
+                 data-description="SPF protection cream for daily use.">
+                <div class="flip-card-front">
+                    <img src="https://i.pinimg.com/1200x/6c/1b/84/6c1b847928920bd4ae19a07828b9b11b.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Sunscreen</h2>
+                </div>
+            </div>
+            <div class="flip-card-inner"
+                 data-title="Moisturizer"
+                 data-price="$140"
+                 data-img="https://i.pinimg.com/736x/da/85/27/da852720586700f5548eb4c50b55c8fe.jpg"
+                 data-description="Daily skin hydration cream.">
+                <div class="flip-card-front">
+                    <img src="https://i.pinimg.com/736x/da/85/27/da852720586700f5548eb4c50b55c8fe.jpg"
+                         alt=""
+                         width="200px"
+                         height="200px" />
+                    <h2>Moisturizer</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-table">
+        <button class="LPbtn" onclick="loadPrices()">Load Prices</button>
+        <table id="productsTable"></table>
+    </section>
+
+    <!-- ===== MODAL ===== -->
+    <!--<div class="overlay" id="productModal">
+        <div class="modal">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img id="modalImg" src="" alt="" width="260px" />
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice"></p>
+            <p id="modalDescription"></p>
+            <button class="model-order-now">Order Now</button>
+            <button class="modal-add-to-cart">Add to cart</button>
+        </div>-->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

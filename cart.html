@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veloria Cosmetics - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap"
+          rel="stylesheet" />
+</head>
+<body onload="loadCart()">
+    <!-- header at first of each page to make the user easely browse -->
+    <header>
+        <div class="logo">
+            <img src="https://i.postimg.cc/yN37y1zr/Screenshot-2025-11-29-055936.png" />
+            <h1>VELORIA</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="http://localhost/VELORIA%20website/index.html#about">About</a><!--  .. is to go back to the index -->
+            <a href="http://localhost/VELORIA%20website/index.html#catalog">Catalog</a><!--  .. is to go back to the index -->
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-btns">
+            <div class="log-in-button">
+                <a id="goLogin" class="log-in" href="login.html">Log In</a>
+            </div>
+            <div class="sign-in-button">
+                <a id="goRegister" class="sign-in" href="register.html">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <h2>Your Shopping Cart</h2>
+
+        <div id="cart-items" class="cart-items">
+            <!-- JS will insert cart items here -->
+        </div>
+
+        <!-- <div class="cart-summary">
+          <h3>Order Summary</h3>
+          <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+          <button id="checkout-btn" class="checkout-btn">
+            Proceed to Checkout
+          </button>
+        </div> -->
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

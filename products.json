@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Shampoo",
+    "description": "Nourishing hair cleanser for all hair types.",
+    "price": 120
+  },
+  {
+    "name": "Serum",
+    "description": "Skin-reviving serum for radiant glow.",
+    "price": 250
+  },
+  {
+    "name": "Body Lotion",
+    "description": "Hydrating body lotion for smooth skin.",
+    "price": 80
+  },
+  {
+    "name": "Face Cleanser",
+    "description": "Gentle daily face cleanser.",
+    "price": 100
+  },
+  {
+    "name": "Hair Mask",
+    "description": "Deep conditioning treatment for strong hair.",
+    "price": 110
+  },
+  {
+    "name": "Lip Balm",
+    "description": "Softens and moisturizes lips.",
+    "price": 180
+  },
+  {
+    "name": "Sunscreen",
+    "description": "SPF protection cream for daily use.",
+    "price": 160
+  },
+  {
+    "name": "Moisturier",
+    "description": "Daily skin hydration cream.",
+    "price": 140
+  }
+]

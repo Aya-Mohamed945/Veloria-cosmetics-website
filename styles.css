@@ -1,0 +1,748 @@
+﻿/*general*/
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*display in the middle*/
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none; /*will remove the underline of the links*/
+        font-size: 17px;
+    }
+
+        .nav-links a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+/*cart*/
+.cart-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.cart-items {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(68, 124, 170, 0.807);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*display in the middle*/
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+    .cart-item img {
+        width: 80px;
+        border-radius: 10px;
+    }
+
+.cart-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center; /*display in the middle*/
+    gap: 10px;
+}
+
+    .quantity button {
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background: rgb(50, 111, 133);
+        color: white;
+    }
+
+.remove-btn {
+    background: crimson;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+}
+
+.cart-summary {
+    background: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-btn {
+    background: rgb(50, 111, 133);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
+    transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+}
+
+    .checkout-btn:hover {
+        color: rgb(50, 111, 133);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(50, 111, 133);
+    }
+
+/*login & register*/
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.form-card {
+    background: #fff;
+    padding: 35px;
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+}
+
+    .form-card h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.submit-btn {
+    border: none;
+    background: rgb(50, 111, 133);
+    color: #fff;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+    .submit-btn:hover {
+        color: rgb(50, 111, 133);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(50, 111, 133);
+    }
+
+/*contact*/
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 20px;
+}
+
+.contact-details {
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    flex: 1 1 400px;
+}
+
+    .contact-details h2 {
+        margin-bottom: 20px;
+    }
+
+    .contact-details p {
+        margin: 10px 0;
+        font-size: 1.05rem;
+    }
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+    .social-links a {
+        text-decoration: none; /*will remove the underline of the links*/
+        color: #000;
+        font-weight: 600;
+    }
+
+        .social-links a:hover {
+            color: rgb(50, 111, 133);
+        }
+
+/*aya's*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* header-part */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(50, 111, 133);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; /*display in the middle*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    header .logo {
+        display: flex;
+        font-size: 15px;
+        align-items: center; /*display in the middle*/
+    }
+
+        header .logo img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            border-radius: 50%;
+        }
+
+        header .logo h1 {
+            color: white;
+            margin-left: 5px;
+            text-shadow: 0 0 10px #000000, 0 0 10px #525151;
+            letter-spacing: 1px;
+        }
+
+.logo h1::first-letter {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+header nav {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    align-items: center; /*display in the middle*/
+    justify-content: space-around;
+    padding: 10px;
+}
+
+    header nav a {
+        position: relative;
+        text-decoration: none; /*will remove the underline of the links*/
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+    }
+
+        header nav a:after {
+            content: "";
+            position: absolute;
+            background-color: white;
+            height: 2px;
+            width: 0;
+            left: 50%;
+            bottom: -10px;
+            transition: all ease 0.3s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+        }
+
+        header nav a:hover {
+            color: black;
+        }
+
+            header nav a:hover:after {
+                width: 100%;
+                left: 0;
+            }
+
+.contact-button a {
+    font-size: 17px;
+    background-color: white;
+    color: rgb(50, 111, 133);
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+    padding: 10px 20px;
+    text-decoration: none; /*will remove the underline of the links*/
+    margin-right: 10px;
+    transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+}
+
+    .contact-button a:hover {
+        color: white;
+        background-color: rgb(50, 111, 133);
+    }
+
+.sign-in,
+.log-in,
+.modal-add-to-cart:hover,
+.model-order-now {
+    color: white;
+    background-color: rgb(50, 111, 133);
+    font-size: 17px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+    padding: 10px 20px;
+    text-decoration: none; /*will remove the underline of the links*/
+    margin-right: 10px;
+    transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+}
+
+    .sign-in:hover,
+    .log-in:hover,
+    .model-order-now:hover {
+        background-color: white;
+        color: rgb(50, 111, 133);
+    }
+
+    .model-order-now:hover {
+        border: 2px solid rgb(50, 111, 133);
+    }
+
+.nav-btns {
+    display: flex;
+}
+
+.home {
+    margin: 80px 0px;
+}
+
+.home-content {
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+    .home-content h1 {
+        font-size: 50px;
+        color: rgb(50, 111, 133);
+    }
+
+    .home-content h2 {
+        font-size: 40px;
+        margin-top: -20px;
+        color: black;
+    }
+
+    .home-content p {
+        font-size: 20px;
+        width: 700px;
+        margin-top: -20px;
+    }
+
+    .home-content img {
+        width: 560px;
+        height: 550px;
+        float: right;
+        margin-top: -100px;
+        margin-right: 100px;
+    }
+
+    .home-content .welcome {
+        font-size: 17px;
+        background-color: rgb(50, 111, 133);
+        color: white;
+        border: 2px solid rgb(50, 111, 133);
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer; /*to make it clickeable and refer to something*/
+        padding: 10px 20px;
+        text-decoration: none; /*will remove the underline of the links*/
+        transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+    }
+
+        .home-content .welcome:hover {
+            color: rgb(50, 111, 133);
+            background-color: white;
+            box-shadow: 0 0 10px rgb(88, 157, 182);
+        }
+
+.How-it-work {
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(240, 252, 255);
+}
+
+    .How-it-work h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 30px;
+        color: black;
+    }
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .box-container .box {
+        width: 280px;
+        height: 200px;
+        padding: 10px;
+        border: 2px solid rgb(50, 111, 133);
+        text-align: center;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px 1px rgb(50, 111, 133);
+    }
+
+.box h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.box p {
+    font-size: 15px;
+}
+/* .box i {
+  color: rgb(50, 111, 133);
+  font-size: 25px;
+} */
+.box:hover {
+    color: white;
+    background-color: rgb(50, 111, 133);
+    box-shadow: 7px 7px 35px 3px gray;
+    transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+}
+/* .box:hover i {
+  color: white;
+} */
+
+.about {
+    margin-left: 60px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+    .about h1 {
+        font-size: 50px;
+        color: rgb(50, 111, 133);
+    }
+
+    .about h2 {
+        font-size: 45px;
+        margin-top: -20px;
+        color: black;
+    }
+
+    .about h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-top: -10px;
+    }
+
+    .about p {
+        font-size: 18px;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .about img {
+        width: 400px;
+        height: 300px;
+        float: left;
+        margin-top: 100px;
+        margin-right: 150px;
+    }
+
+    .about a {
+        font-size: 17px;
+        background-color: rgb(50, 111, 133);
+        color: white;
+        border: 2px solid rgb(50, 111, 133);
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer; /*to make it clickeable and refer to something*/
+        padding: 10px 20px;
+        text-decoration: none; /*will remove the underline of the links*/
+        margin-top: 50px;
+    }
+
+        .about a:hover {
+            background-color: white;
+            color: rgb(50, 111, 133);
+            box-shadow: 0 0 10px rgb(96, 171, 199);
+        }
+
+.order-menu {
+    padding-top: 100px;
+    background-color: rgb(240, 251, 255);
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+    .order-menu h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 20px;
+        color: black;
+    }
+
+.menu-list nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    .menu-list nav a {
+        position: relative;
+        text-decoration: none; /*will remove the underline of the links*/
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin: 20px;
+    }
+
+        .menu-list nav a:after {
+            content: "";
+            position: absolute;
+            background-color: rgb(50, 111, 133);
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+        }
+
+        .menu-list nav a:hover {
+            color: rgb(50, 111, 133);
+        }
+
+            .menu-list nav a:hover:after {
+                width: 100%;
+            }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /*display in the middle*/
+    min-height: 10vh;
+    max-width: 90%;
+    width: 100%;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+.flip-card {
+    perspective: 15000px;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; /*display in the middle*/
+    justify-content: space-around;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.flip-card-inner {
+    width: 250px;
+    height: 300px;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front:hover {
+    box-shadow: 0 0 10px rgb(88, 157, 182);
+    margin-top: -15px;
+}
+
+.flip-card-front {
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    backface-visibility: hidden;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(50, 111, 133);
+    font-size: 15px;
+    transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center; /*display in the middle*/
+    z-index: 1000;
+}
+
+.modal {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    float: right;
+    font-size: 40px;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+}
+
+.modal-add-to-cart {
+    color: rgb(50, 111, 133);
+    background-color: rgb(255, 255, 255);
+    font-size: 17px;
+    border: 2px solid rgb(50, 111, 133);
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer; /*to make it clickeable and refer to something*/
+    padding: 10px 20px;
+    text-decoration: none; /*will remove the underline of the links*/
+    margin-right: 10px;
+    transition: all ease 0.2s; /*the box will grow smoothly, start slow, move faster in the middle, and slow down at the end.*/
+}
+.product-table {
+    text-align: center;
+    background: rgb(240, 251, 255);
+    padding-bottom: 20px;
+}
+.LPbtn {
+    color: white;
+    background-color: rgb(50, 111, 133);
+    font-size: 19px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-right: 10px;
+    transition: all ease 0.2s;
+}
+.LPbtn:hover {
+    background-color: white;
+    color: rgb(50, 111, 133);
+    border: 2px solid rgb(50, 111, 133);
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(50, 111, 133);
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        position: static;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: -180px;
+    }
+
+    header nav a {
+        font-size: 24px;
+        margin-top: -180px;
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .home-content p {
+            width: fit-content;
+        }
+
+        .home-content img {
+            width: 400px;
+            height: 400px;
+        }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button,
+    .about a {
+        width: 240px;
+        justify-content: center;
+    }
+    table{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-content img {
+        width: 350px;
+        height: 350px;
+        margin-right: 240px;
+    }
+}
